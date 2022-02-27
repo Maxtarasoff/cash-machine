@@ -1,15 +1,20 @@
+import org.apache.log4j.Logger;
+
 public class Reader {
+
+    private static final Logger log = Logger.getLogger(Reader.class);
 
     public static String execute(String command){
 
+        log.info("call execute(" + command + ")");
         String result = "ERROR";
 
         if (command.equalsIgnoreCase("exit")) {
-            result = "";
+            result = "EXIT";
         } else
 
         if (command.equals("?")) {
-            result = Storage.printCash().concat("OK");
+            result = Storage.printCash();
         } else
 
         if (isValidDepositCommand(command)) {

@@ -5,10 +5,10 @@ import java.util.Scanner;
  * @author Maxim Tarasov, maxtarasoff@gmail.com
  * @version 1.0
  *
+ * 5 TODO JavaDoc
  * 4 TODO Refactor variables names
  * 3 TODO Refactor methods names
  * 2 TODO Logging
- * 0 TODO push to Github
  *
  * */
 

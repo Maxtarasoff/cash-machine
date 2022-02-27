@@ -160,7 +160,7 @@ class ReaderTest {
 
     @Test
     void testExitCommand(){
-        assertEquals("", Reader.execute("exit"));
+        assertEquals("EXIT", Reader.execute("exit"));
     }
 
     @Test

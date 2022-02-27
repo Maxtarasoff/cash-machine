@@ -1,2 +1,4 @@
 # cash-machine
 Test task
+-----
+

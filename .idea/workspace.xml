@@ -5,40 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c8d3f82-8992-4be1-a22a-ce53a4c4fc63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../11_Multithreading/Deadlock/Deadlock.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11_Multithreading/ImageResizer/ImageResizer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11_Multithreading/Transactions/Transactions.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5/Hospital/Hospital.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5/Rainbow/Rainbow.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../5/TikTakToe/TikTakToe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Airport/Airport.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bank/Bank.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CalendarExperiments/CalendarExperiments.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cat/.idea/Cat.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CharCodes/CharCodes.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CollectionExperiment/CollectionExperiment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Collections/FreqDictionary/FreqDictionary.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Experiment2/Experiment2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Experiments/Experiments.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FJP/FJP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FJP/src/FJPClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FJP/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hospital/Hospital.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ListEmail/ListEmail.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MailList/MailList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PhoneBook/PhoneBook.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PhoneNumber/PhoneNumber.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProjectFIO/ProjectFIO.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Rainbow/Rainbow.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TextRegExp/TextRegExp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TikTakToe/TikTakToe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ToDoCMD/ToDoCMD.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Transactions/Transactions.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CurrencyContainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Storage.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CurrencyContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CurrencyContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,10 +61,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.4954023" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -99,57 +77,46 @@
   </component>
   <component name="RunManager" selected="JUnit.ReaderTest">
     <configuration name="CashMachine" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11.0.6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="CashMachine" />
+      <module name="cash-machine" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CashMachine" />
+      <module name="cash-machine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11.0.6" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ReaderTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReaderTest.testDepositUSD10_10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CashMachine" />
+    <configuration name="ReaderTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="cash-machine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11.0.6" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ReaderTest" />
-      <option name="METHOD_NAME" value="testDepositUSD10_10" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReaderTest.testQuestionWithoutPreparing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CashMachine" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReaderTest" />
-      <option name="METHOD_NAME" value="testQuestionWithoutPreparing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReaderTest.testWithdrawUSD100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CashMachine" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ReaderTest" />
-      <option name="METHOD_NAME" value="testWithdrawUSD100" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.CashMachine" />
+      <item itemvalue="JUnit.ReaderTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ReaderTest" />
-        <item itemvalue="JUnit.ReaderTest.testWithdrawUSD100" />
-        <item itemvalue="JUnit.ReaderTest.testDepositUSD10_10" />
-        <item itemvalue="JUnit.ReaderTest.testQuestionWithoutPreparing" />
+        <item itemvalue="JUnit.ReaderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -177,8 +144,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cash_machine$ReaderTest.ic" NAME="ReaderTest Coverage Results" MODIFIED="1645948847466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/cash_machine$ReaderTest__1_.ic" NAME="ReaderTest (1) Coverage Results" MODIFIED="1645948251826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/CashMachine$ReaderTest.ic" NAME="ReaderTest Coverage Results" MODIFIED="1645881436676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/CashMachine$ReaderTest_testQuestionWithoutPreparing.ic" NAME="ReaderTest.testQuestionWithoutPreparing Coverage Results" MODIFIED="1645874699011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
