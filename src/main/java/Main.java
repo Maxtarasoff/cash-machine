@@ -7,8 +7,6 @@ import java.util.Scanner;
  *
  * 5 TODO JavaDoc
  * 4 TODO Refactor variables names
- * 3 TODO Refactor methods names
- * 2 TODO Logging
  *
  * */
 

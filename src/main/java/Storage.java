@@ -4,17 +4,17 @@ import java.util.*;
 public final class Storage {
 
     private static final Logger log = Logger.getLogger(Storage.class);
-    private static final Map<String, CurrencyContainer> CashMachine = new HashMap<>();
+    private static final Map<String, CurrencyContainer> ATM = new HashMap<>();
 
     public static CurrencyContainer getContainerByCurrency(String currency){
 
         CurrencyContainer container;
 
-        if (CashMachine.containsKey(currency)){
-            container = CashMachine.get(currency);
+        if (ATM.containsKey(currency)){
+            container = ATM.get(currency);
         } else {
             container = new CurrencyContainer(currency);
-            CashMachine.put(currency, container);
+            ATM.put(currency, container);
         }
 
         return container;
@@ -25,11 +25,11 @@ public final class Storage {
         log.info("call printCash()");
 
         String result = "";
-        List<String> currencies = new ArrayList<>(CashMachine.keySet());
+        List<String> currencies = new ArrayList<>(ATM.keySet());
         Collections.sort(currencies);
 
         for (String currency : currencies) {
-            result = result.concat(CashMachine.get(currency).getCurrencyBalance());
+            result = result.concat(ATM.get(currency).getCurrencyCash());
         }
 
         result = result.concat("OK");
@@ -41,7 +41,7 @@ public final class Storage {
 
         log.info("call deposit(" + currency + ", " + noteValue + ", " + noteCount + ")");
 
-        if (noteCount >0) return getContainerByCurrency(currency).depositAmount(noteValue, noteCount);
+        if (noteCount >0) return getContainerByCurrency(currency).depositNotes(noteValue, noteCount);
 
         log.error("noteCount <= 0");
         return "ERROR";

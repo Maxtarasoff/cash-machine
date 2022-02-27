@@ -7,31 +7,32 @@ public class Reader {
     public static String execute(String command){
 
         log.info("call execute(" + command + ")");
-        String result = "ERROR";
 
         if (command.equalsIgnoreCase("exit")) {
-            result = "EXIT";
-        } else
+            return "EXIT";
+        }
 
         if (command.equals("?")) {
-            result = Storage.printCash();
-        } else
+            return Storage.printCash();
+        }
 
         if (isValidDepositCommand(command)) {
             String[] args = command.split("\\s");
             String currency = args[1];
             int noteValue = Integer.parseInt(args[2]);
             int noteCount = Integer.parseInt(args[3]);
-            result = Storage.deposit(currency, noteValue, noteCount);
-        } else
+            return Storage.deposit(currency, noteValue, noteCount);
+        }
 
         if (isValidWithdrawCommand(command)){
             String[] args = command.split("\\s");
             String currency = args[1];
             int amount = Integer.parseInt(args[2]);
-            result = Storage.withdraw(currency, amount);
+            return Storage.withdraw(currency, amount);
         }
-        return result;
+
+        log.error("invalid command");
+        return "ERROR";
     }
 
     private static boolean isValidDepositCommand(String command) {
