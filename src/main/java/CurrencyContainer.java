@@ -1,6 +1,14 @@
 import org.apache.log4j.Logger;
-
 import java.util.*;
+
+/**
+ * Individual container for each currency.
+ * Stores information about numbers of available notes.
+ * Provides public methods to get balance, deposit, withdraw.
+ * @see #getBalance()
+ * @see #depositNotes(int, int)
+ * @see #withdrawAmount(int)
+ */
 
 public class CurrencyContainer {
 
@@ -14,9 +22,20 @@ public class CurrencyContainer {
         log = Logger.getLogger("CurrencyContainer(" + currency + ")");
     }
 
-    public String getCurrencyCash() {
+    /** Gets what is currently in the cash.
+     *
+     * @return
+     * Lines are ordered by note value, from less to greater.
+     * Followed by the line OK
+     * For example:
+     * <br>USD 10 50
+     * <br>USD 100 30
+     * <br>OK
+     */
 
-        log.info("call getCurrencyBalance()");
+    public String getBalance() {
+
+        log.info("call getBalance()");
 
         String result = "";
         ArrayList<Integer> listNotes = getSortedListOfNotes();
@@ -27,6 +46,15 @@ public class CurrencyContainer {
 
         return result;
     }
+
+    /**
+     * Add notes to container
+     * @param note  value of notes
+     * @param count count of notes
+     * @return OK on success
+     * <br>ERROR if value not included in validNoteValues
+     * @see CurrencyContainer#validNoteValues
+     */
 
     public String depositNotes(int note, int count){
 
@@ -46,6 +74,18 @@ public class CurrencyContainer {
         log.info("Success deposit");
         return "OK";
     }
+
+    /**
+     * Try to withdraw amount from container.
+     * @param amount - requested amount of money.
+     * @return Strings of value-count pair on success, followed by OK
+     * for example:
+     * withdrawAmount(250)
+     * <br>100 2
+     * <br>50 1
+     * <br>OK
+     * <br>or ERROR on fail
+     */
 
     public String withdrawAmount(int amount){
 
@@ -73,6 +113,14 @@ public class CurrencyContainer {
         return result;
     }
 
+    /**
+     * Find way to withdraw requested amount from container.
+     * @param amount requested amount of money
+     * @return Linked Map of note-count pair of notes, necessary to get requested amount.
+     * Map sorted by key(note) from greater to less.
+     * <br>Empty map on fail
+     */
+
     private LinkedHashMap<Integer, Integer> getWithdrawNotes(int amount) {
 
         log.info("call getWithdrawNotes(" + amount + ")");
@@ -83,26 +131,26 @@ public class CurrencyContainer {
         log.info("Available notes: " + listNotes);
 
         for (Integer note : listNotes) {
-            int count = amount / note;      // запрашиваемую сумму делим на доступный номинал
-            if (containerNotes.get(note) > count) {          // если доступно столько банкнот
-                map.put(note, count);                   // записываем в карту это количество
-                amount -= note * count;         // из запрашиваемой суммы вычитаем выданную сумму
-            } else {                            // если банкнот меньше
-                map.put(note, containerNotes.get(note));     // записываем в карту столько банкнот, сколько есть в банке
-                amount -= note * containerNotes.get(note); // из запрашиваемой суммы вычитаем выданную сумму
+            int count = amount / note;
+            if (containerNotes.get(note) > count) {
+                map.put(note, count);
+                amount -= note * count;
+            } else {
+                map.put(note, containerNotes.get(note));
+                amount -= note * containerNotes.get(note);
             }
-            if (amount == 0) break;     // если на данном этапе выбрали всю сумму, то останавливаем цикл
+            if (amount == 0) break;
         }
 
         if (amount > 0) {
             log.error("there is no change in ATM (" + amount + ")");
-            map.clear(); // если после всех итераций вся сумма не выдана, то очищаем карту
+            map.clear();
         }
 
         return map;
     }
 
-    public int getTotalAmount(){
+    private int getTotalAmount(){
         int amount = 0;
     for (Integer note : containerNotes.keySet())
             amount += note * containerNotes.get(note);

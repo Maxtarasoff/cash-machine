@@ -1,5 +1,9 @@
 import org.apache.log4j.Logger;
 
+/**
+ *  Recognize commands from standard input and sends reply according Main class description.
+ */
+
 public class Reader {
 
     private static final Logger log = Logger.getLogger(Reader.class);
